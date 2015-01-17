@@ -1,0 +1,4 @@
+*.swp
+.*~
+## Erlang ##
+*.beam
