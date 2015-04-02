@@ -4,8 +4,7 @@
 start(N, M, Message) ->
     Pid = spawn(processcircle, init, [N-1, self()]),
     Pid ! {self(), Message, M},
-    loop(Pid),
-    ok.
+    loop(Pid).
 
 init(1, Pid) ->
     loop(Pid);
